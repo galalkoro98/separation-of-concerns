@@ -1,3 +1,10 @@
 .number-item {
   font-family: fantasy;
+  color: rgb(0, 0, 0);
+  font-size: larger;
+}
+
+
+#user-interface {
+  color: rgb(226, 43, 43);
 }

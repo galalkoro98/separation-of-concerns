@@ -41,6 +41,14 @@
           debugger;
 
           // write me! (... without using cloneNode, that's kind of cheating)
+
+          const actualEl = document.getElementById('actual');
+          const linkHref = document.createElement('a');
+          linkHref.innerText = 'Mr. Traversy does it again!';
+          linkHref.href = 'https://www.youtube.com/watch?v=0ik6X4DJKCc';
+          actualEl.appendChild(linkHref);
+
+        
         </script>
       </div>
 
