@@ -48,17 +48,23 @@
           // write me! (... without using cloneNode, that's kind of cheating)
 
           const actual = document.getElementById('actual');
+          const orderList = actual.children[0];
+          const unorderedList = document.createElement('ul');
+          const nodes = orderList.children;
+          for(let i = 0; i < nodes.length; i++){
+            const copy = orderList.children[i].cloneNode(true);
+            unorderedList.appendChild(copy);
+          }
+
+          actual.replaceChild(unorderedList, orderList);
           const headElement = document.createElement('h1');
           headElement.innerText = 'a list of things';
-          const ol = actual.children[0];
+           const ol = actual.children[0];
           actual.insertBefore(headElement, ol);
           const listOfItems  = actual.children[1].children[1];
           listOfItems.innerText = 'solar systems';
           const removeLastItemInList = actual.children[1].children[3]
           removeLastItemInList.remove(removeLastItemInList.lastChild);
-          
-          
-          
           
           
         </script>
