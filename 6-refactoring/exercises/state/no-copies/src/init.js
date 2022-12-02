@@ -1,25 +1,30 @@
 // data to refactor out of this file
-const data = {
-  noCopies: [],
-};
+// const data = {
+//   noCopies: [],
+// };
 
-document.getElementById('no-copies-button').addEventListener('click', () => {
-  // read & process user input
-  let userInput = null;
-  while (userInput === null) {
-    userInput = prompt('enter a string to save');
-  }
+// import listener from './listener.js';
 
-  // execute core logic
-  const alreadySaved = data.noCopies.includes(userInput);
-  if (!alreadySaved) {
-    data.noCopies.push(userInput);
-  }
+// document.getElementById('no-copies-button').addEventListener('click', () => {
+//   // read & process user input
+//   let userInput = null;
+//   while (userInput === null) {
+//     userInput = prompt('enter a string to save');
+//   }
 
-  // communicate result to user
-  const message = data.noCopies.join(', ');
-  alert(message);
+//   // execute core logic
+//   const alreadySaved = data.noCopies.includes(userInput);
+//   if (!alreadySaved) {
+//     data.noCopies.push(userInput);
+//   }
 
-  // log interaction
-  console.log(data);
-});
+//   // communicate result to user
+//   const message = data.noCopies.join(', ');
+//   alert(message);
+
+//   // log interaction
+//   console.log(data);
+// });
+
+import listener from './listener.js';
+listener();
