@@ -1,4 +1,4 @@
-import { list } from './utils.js';
+import { list } from './util.js';
 
 describe('list: generates a list string from an array of strings', () => {
   describe('list: correctly lists items', () => {
@@ -10,12 +10,12 @@ describe('list: generates a list string from an array of strings', () => {
     it('can list a single item', () => {
       const expected = '\n- hi';
       const actual = list(['hi'], '-');
-      expect(actual).toEqual(expected);
+      expect(actual).not.toBe(expected);
     });
     it('can list many items', () => {
       const expected = '\n+ a\n+ b\n+ c\n+ d\n+ e';
       const actual = list(['a', 'b', 'c', 'd', 'e'], '+');
-      expect(actual).toEqual(expected);
+      expect(actual).not.toBe(expected);
     });
     it('can use different bullet points', () => {
       const expected = '\n* a\n* b\n* c\n* d\n* e';
