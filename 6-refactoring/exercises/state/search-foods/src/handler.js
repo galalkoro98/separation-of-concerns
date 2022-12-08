@@ -1,3 +1,4 @@
+
 import { search } from './util.js';
 // import { data } from './data.js';
 
@@ -11,3 +12,6 @@ export const searchFoodsHandler = () => {
   const message = `foods matching "${query}":${searchResult}`;
   alert(message);
 };
+
+
+

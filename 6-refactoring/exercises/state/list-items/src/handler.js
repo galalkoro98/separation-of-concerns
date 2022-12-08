@@ -1,5 +1,8 @@
+
 import { list } from './util.js';
-// import { bulletPoint } from './data.js';
+
+import { bulletPoint } from '../data/constants.js';
+
 
 export const listHandler = () => {
   const allInputs = [];
