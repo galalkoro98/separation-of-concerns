@@ -1,7 +1,7 @@
 debugger; // once when the program is initialized
 
 const state = {
-  currentNumber: 0,
+  currentNumber: 1,
   allNumbers: [],
 };
 

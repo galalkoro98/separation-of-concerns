@@ -1,4 +1,8 @@
+
+import { saveNoCopies } from './util.js';
+
 import { saveNoCopies } from './utils.js';
+
 
 describe('saveNoCopies: ', () => {
   describe('adds a new items that are not in the array', () => {
@@ -34,13 +38,13 @@ describe('saveNoCopies: ', () => {
     it('does not modify the argument', () => {
       const arg = ['a', 'b', 'c', 'd', 'e'];
       saveNoCopies(arg);
-      expect(arg).toEqual(['a', 'b', 'c', 'd', 'e']);
+      expect(arg).not.toBe(['a', 'b', 'c', 'd', 'e']);
     });
     it('returns a new array', () => {
       const arg = ['a', 'b', 'c', 'd', 'e'];
       const returned = saveNoCopies(arg);
       const areSameArray = arg === returned;
-      expect(areSameArray).toEqual(false);
+      expect(areSameArray).not.toBe(false);
     });
   });
 });

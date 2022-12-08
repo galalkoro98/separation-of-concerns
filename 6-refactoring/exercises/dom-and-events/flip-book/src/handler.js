@@ -1,3 +1,7 @@
-// import { reverseAndUpper } from './utils.js';
+import { reverseAndUpper } from './util.js';
 
-export const reverseAndUpperHandler = _;
+export const reverseAndUpperHandler = (even) => {
+  const input = even.target.value;
+  const reversedUppercase = reverseAndUpper(input);
+  document.getElementById('output').innerHTML = reversedUppercase;
+};

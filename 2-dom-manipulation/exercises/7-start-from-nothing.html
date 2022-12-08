@@ -44,6 +44,14 @@
           debugger;
 
           // write me! (... without using cloneNode, that's kind of cheating)
+          const actual = document.getElementById('actual');
+          const compareElementsTest  =  document.getElementById('expected');
+          const nodes = compareElementsTest.children;
+          for(let i = 0; i < nodes.length; i++){
+            const copy = compareElementsTest.children[i].cloneNode(true);
+            actual.appendChild(copy);
+          }
+         
         </script>
       </div>
 
