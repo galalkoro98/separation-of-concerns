@@ -1,5 +1,4 @@
-
-import { list } from './utils.js';
+import { list } from './util.js';
 import { bulletPoint } from '../data/constants.js';
 
 

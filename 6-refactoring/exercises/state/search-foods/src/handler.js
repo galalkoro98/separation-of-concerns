@@ -13,5 +13,4 @@ export const searchFoodsHandler = () => {
   alert(message);
 };
 
-export const searchFoodsHandler = () => {};
 
